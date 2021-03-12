@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính tổng 2 số nguyên</title>
+</head>
+<body>
+  <form>
+    Nhập số thứ nhất <input id="so1" type="text"/><br/>
+    Nhập số thứ nhất <input id="so2" type="text"/><br/>
+  </form>
+  <button onclick="tinhtong()">Tổng</button>
+  <p id = "tong"></p>
+   <script>
+    function tinhtong()
+{
+  let a = Number(document.getElementById("so1").value);
+  let b = Number(document.getElementById("so2").value);
+  let c = a + b;
+  document.getElementById("tong").innerHTML = (c);
+} 
+  </script>
+</body>
+</html>
