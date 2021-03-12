@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tính tổng 2 số nguyên</title>
+</head>
+<body>
+  <form>
+    Nhập số tiền <input id="sotien" type="text"/>triệu<br/>
+    Nhập thời gian <input id="sonam" type="text"/>năm<br/>
+    Nhập lãi suất <input id="laisuat" type="text"/>%<br/>
+  </form>
+  <button onclick="laisuat()">Tính</button>
+ <p id = "ketqua"></p>
+   <script>
+    function laisuat()
+{
+  let t = Number(document.getElementById("sotien").value);
+  let n = Number(document.getElementById("sonam").value);
+  let l = Number(document.getElementById("laisuat").value);
+  let tien = t +(n*t*l/100)
+  document.getElementById("ketqua").innerHTML = ('Số tiền sau '+n+' năm là: ' + tien + ' triệu');
+} 
+  </script>
+</body>
+</html>
